@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit a Piece</title>
+    <link rel="stylesheet" href="piece.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <!-- <nav>
+      <a href="/index.html"
+        ><span class="material-symbols-outlined" id="logo"> school </span></a
+      >
+      <div class="menu-items-container">
+        <a href="/newsletters/newsletters.html"
+          ><p class="menu-item">Newsletters</p></a
+        >
+        <a href="/questions/questions.html"
+          ><p class="menu-item">Submit Question</p></a
+        >
+        <a href="/piece/piece.html"><p class="menu-item">Submit Piece</p></a>
+      </div>
+    </nav> -->
+    <a href="../index.html"><span class="material-symbols-outlined" id="back-arrow">arrow_back</span></a>
+    <div id="form-container">
+      <h1>Admin Login</h1>
+      <form id="submit-question">
+        <label for="name"></label>
+        <input class="inpt" type="text" name="name" placeholder="Your name" id="username"/>
+        <div class="question-box">
+          <input
+          id="password"
+          type="password"
+            name="question"
+            placeholder="Your Password"
+          ></input>
+        </div>
+
+        <button type="submit" class="btn" onclick="verifyLogin(event)">Log in</button>
+        <p id="error-message">Incorrect username or password</p>
+      </form>
+    </div>
+    <script src="../admin.js"></script>
+  </body>
+</html>

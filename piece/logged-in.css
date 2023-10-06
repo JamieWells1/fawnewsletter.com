@@ -1,0 +1,19 @@
+body {
+  background-color: #f0f0f0;
+}
+
+#piece-submit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+@media (max-width: 768px) {
+  body {
+    zoom: 60%;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletters</title>
+    <link rel="stylesheet" href="newsletters.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/faw-newsletter-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"
+        ><img src="../assets/faw-newsletter-logo.png" id="logo"
+      /></a>
+      <div class="menu-items-container">
+        <a href="./newsletters.html"><p class="menu-item">Newsletters</p></a>
+        <a href="../questions/questions.html"
+          ><p class="menu-item">Submit Question</p></a
+        >
+        <a href="../piece/piece.html"><p class="menu-item">Submit Piece</p></a>
+      </div>
+    </nav>
+
+    <h1>Our Newsletters</h1>
+    <div id="page-contents-container">
+      <div class="newsletter-boxes">
+        <h2>Our Newsletter Title</h2>
+        <p>01.01.23</p>
+        <h3>A short, catchy description about what this newsletter covers.</h3>
+        <div id="pdf-frame">
+          <iframe
+            src="../assets/newsletter-screenshots/dummy-newsletter.pdf"
+            type="application/pdf"
+            width="130%"
+            height="1100px"
+          >
+            This browser does not support embedded PDFs. You can
+            <a href="../assets/newsletter-screenshots/dummy-newsletter.pdf"
+              >download it here</a
+            >
+            instead.
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= Mobile Menu ======================== -->
+
+    <div class="bottom-menu">
+      <a href="../index.html" class="bottom-menu-item"
+        ><span class="material-symbols-outlined">home</span></a
+      >
+      <a href="../newsletters/newsletters.html" class="bottom-menu-item"
+        ><span class="material-symbols-outlined">feed</span></a
+      >
+      <a href="../questions/questions.html" class="bottom-menu-item"
+        ><span class="material-symbols-outlined">question_mark</span></a
+      >
+      <a href="../piece/piece.html" class="bottom-menu-item"
+        ><span class="material-symbols-outlined">publish</span></a
+      >
+    </div>
+
+    <!-- ======================= Mobile Error Message ======================== -->
+
+    <div id="mobile-screen">
+      <h1 id="mobile-h1">Oops! Can't display PDF on mobile devices.</h1>
+      <p>Visit the site on desktop to see our newsletters.</p>
+      <span class="material-symbols-outlined" id="screen_search_desktop"
+        >screen_search_desktop</span
+      >
+    </div>
+  </body>
+</html>
