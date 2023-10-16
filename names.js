@@ -1,4 +1,4 @@
-const newsletterName = "The Student Overseer";
+const newsletterName = "Future's Focus";
 document.getElementById("how-it-works-desc").innerText =
   "Each half-term a new edition of " +
   newsletterName +
