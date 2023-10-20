@@ -43,3 +43,23 @@ function linkCopied() {
     $(".copy-icon").removeClass("copy-icon");
   }, 200);
 }
+
+icons = document.querySelectorAll(".section-two-icon");
+function newsletterPage() {
+  window.location.href = "./newsletters/newsletters.html";
+}
+
+icons.forEach((icon) => {
+  icon.addEventListener("click", newsletterPage);
+});
+
+emailInput = document.getElementById("email-input");
+emailForm = document.getElementById("email-form");
+emailSubmit = document.getElementById("email-submit");
+
+function addEmail(event) {
+  event.preventDefault();
+  emailInput.value = "";
+  emailSubmit.style.backgroundColor = "green";
+  emailSubmit.innerHTML = "<i class='bi bi-check' style='font-size: 20px'></i>";
+}
