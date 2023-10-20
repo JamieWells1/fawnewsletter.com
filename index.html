@@ -53,6 +53,38 @@
           />
         </div>
       </div>
+
+      <section id="email-section" class="section">
+        <div class="email-right">
+          <img src="./assets/newsletter-email.png" alt="faw-landingpage" />
+        </div>
+        <div class="email-left">
+          <h2 class="heading">Your Child May be Featured!</h2>
+          <p class="paragraph">
+            Enter your email below to be notified each time we publish a new
+            newsletter. <br /><br />
+            If your child has recently participated in any sports events or
+            school trips, they may feature in one of our newsletters!
+          </p>
+          <form name="email-form">
+            <input
+              id="email-input"
+              type="email"
+              class="paragraph"
+              placeholder="Email"
+            />
+            <button
+              id="email-submit"
+              class="btn"
+              type="submit"
+              onclick="addEmail(event)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
       <section id="section-two">
         <h2>So what do our newsletters include?</h2>
         <div class="content">
@@ -116,9 +148,9 @@
           <div class="column-left-content">
             <h2>Why should you read?</h2>
             <p>
-              Stay in the loop! What's there not to like? Whatever you're into -
-              Maths, Sports, Creative Writing, Politics, there'll be something
-              for you in each newsletter.
+              • Stay up to date on school news <br />• Students will become
+              educated about what's going on out side their curriculum<br />•
+              Parents may even see their child featured!
             </p>
             <h2>How to pick up a copy:</h2>
             <p>1. Come into school,</p>
@@ -192,4 +224,16 @@
     <script src="admin.js"></script>
     <script src="index.js"></script>
   </body>
+  <footer>
+    <p>
+      Created by Jamie Wells
+      <a href="https://github.com/JamieWells1" class="bottom-menu-item"
+        ><i class="bi bi-github" style="color: black"></i></a
+      ><a
+        href="https://www.linkedin.com/in/jamie-wells-545719290/"
+        class="bottom-menu-item"
+        ><i class="bi bi-linkedin" style="color: rgb(41, 74, 146)"></i
+      ></a>
+    </p>
+  </footer>
 </html>

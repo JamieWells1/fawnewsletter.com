@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 .btn {
   background-color: #134471;
   border: 0px transparent solid;
@@ -88,7 +90,9 @@ h1 > span {
   color: #b17f15;
 }
 
-h2 {
+.section-one > h2,
+#section-three > .column-left > .column-left-content > h2,
+#section-three > .column-right > h2 {
   margin-top: -20px;
   font-size: 30px;
   font-weight: 600;
@@ -97,6 +101,138 @@ h2 {
 #section-one > .column-left > a > button {
   width: 200px;
   margin-top: 20px;
+}
+
+/* ================================================================
+                            Email Section
+=================================================================*/
+
+.heading {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 400px;
+  width: 100%;
+  background-color: rgba(9, 45, 75, 0.212);
+  @media (max-width: 700px) {
+    grid-template-columns: 90%;
+  }
+}
+
+.section > .email-left {
+  border-radius: 25px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 90%;
+}
+
+.section > .email-right {
+  background-color: transparent;
+}
+
+#email-section > .email-left > h2 {
+  margin-top: -10px;
+  width: 600px;
+}
+
+#email-section > .email-left > p {
+  margin-top: -1px;
+  margin-bottom: 30px;
+}
+
+.email-left > form {
+  display: flex;
+}
+
+.email-left > form > input {
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: rgb(44, 44, 44);
+  border: 0px solid transparent;
+  margin-right: 10px;
+  color: white;
+}
+
+.email-left > form > button {
+  width: 120px;
+}
+
+.section > .email-left > .heading,
+.paragraph {
+  height: fit-content;
+  position: relative;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.visit-site {
+  height: 40px;
+  margin-left: 6%;
+  width: 150px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  background-color: rgb(114, 114, 114);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 4vh;
+}
+
+.visit-site > span {
+  position: relative;
+}
+
+.visit-site:hover {
+  background-color: rgb(141, 141, 141);
+}
+
+.slider > img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+}
+
+/* Slider CSS */
+
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  justify-content: left;
+  transition: transform 0.5s ease;
+}
+
+#email-section > div {
+  position: relative;
+  top: 80px;
+}
+
+.email-right > img {
+  width: 500px;
+  position: relative;
+  left: 11%;
+  border-radius: 10px;
 }
 
 /* ================================================================
@@ -172,7 +308,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   box-shadow: 10px 10px 20px rgb(153, 153, 153);
-  cursor: default;
+  cursor: pointer;
 }
 
 .section-two-icon > * {
@@ -210,6 +346,8 @@ h2 {
   margin-top: -5px;
 }
 
+/* ======================== Section 3 ===========================*/
+
 #section-three {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -223,7 +361,7 @@ h2 {
 
 #section-three > * {
   background-color: white;
-  height: 80%;
+  height: 85%;
   margin-top: 60px;
   border-radius: 30px;
   box-shadow: 20px 20px 20px rgb(187, 187, 187);
@@ -336,6 +474,34 @@ canvas {
 }
 
 /* ================================================================
+                                Footer
+=================================================================*/
+
+footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  width: 400px;
+  margin: auto;
+}
+
+footer > p {
+  display: flex;
+  align-items: center;
+}
+
+footer > p > a > i,
+footer > p {
+  padding-left: 10px;
+}
+
+footer > p > a > i {
+  font-size: 20px;
+}
+
+/* ================================================================
                             Media Queries
 =================================================================*/
 
@@ -383,7 +549,28 @@ canvas {
     height: auto;
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 60px;
     border-radius: 20px;
+  }
+
+  #email-section {
+    padding-bottom: 300px;
+  }
+
+  #email-section > * {
+    width: 80vw;
+  }
+
+  #email-section > .email-right > img {
+    border-radius: 10px;
+  }
+
+  #email-section > .email-left > h2 {
+    margin-top: 40px;
+  }
+
+  #email-section > .email-left > p {
+    margin-top: -15px;
   }
 
   #section-two > .content {
@@ -423,6 +610,10 @@ canvas {
 
   #section-two > .content {
     height: fit-content;
+  }
+
+  footer {
+    display: none;
   }
 
   /* Adjust other styles as needed for mobile */
