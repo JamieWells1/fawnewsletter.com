@@ -563,14 +563,29 @@ footer > p > a > i {
 
   #email-section > .email-right > img {
     border-radius: 10px;
+    width: 100%;
   }
 
   #email-section > .email-left > h2 {
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 
   #email-section > .email-left > p {
     margin-top: -15px;
+    width: 100%;
+  }
+
+  #email-section > .email-left > form > input {
+    width: 50vw;
+    font-size: 15px;
+  }
+
+  #email-section > .email-left > form > button {
+    transition: none;
+    width: 30%;
   }
 
   #section-two > .content {
@@ -717,7 +732,7 @@ footer > p > a > i {
   }
 
   #section-four > .link-container {
-    width: 100%;
+    width: 90%;
   }
 
   #section-three > .column-left {
@@ -731,10 +746,15 @@ footer > p > a > i {
   .column-left-content {
     top: 60px;
     left: 10%;
+    padding-bottom: 300px;
   }
 
   #section-three > .column-right {
     display: none;
+  }
+
+  #section-four {
+    margin-top: 200px;
   }
 }
 
