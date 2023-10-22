@@ -233,7 +233,7 @@
         const fd = new FormData(emailForm); // Updated to use 'email-form'
         const urlEncoded = new URLSearchParams(fd).toString();
 
-        fetch("http://localhost:3000/submit-form", {
+        fetch("https://www.fawnewsletter.com/submit-form", {
           method: "POST",
           body: urlEncoded,
           headers: {
