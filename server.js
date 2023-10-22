@@ -18,8 +18,7 @@ app.post("/submit-form", function (req, res) {
 
   // Create a JSON string from the form data
 
-  /*
-  const dataToWrite = JSON.stringify(fd);
+  const dataToWrite = JSON.stringify(req.body);
 
   // Define the file path where you want to save the data
   const filePath = "./emails.txt";
@@ -34,8 +33,8 @@ app.post("/submit-form", function (req, res) {
       res.status(200).send("Data saved successfully.");
     }
   });
-  
-*/
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Port 3000 awaiting input.");
+});
