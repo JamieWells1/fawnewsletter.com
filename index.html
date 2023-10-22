@@ -66,21 +66,15 @@
             If your child has recently participated in any sports events or
             school trips, they may feature in one of our newsletters!
           </p>
-          <form name="email-form">
+          <form name="email-form" id="email-form">
             <input
               id="email-input"
               type="email"
               class="paragraph"
               placeholder="Email"
+              name="email"
             />
-            <button
-              id="email-submit"
-              class="btn"
-              type="submit"
-              onclick="addEmail(event)"
-            >
-              Submit
-            </button>
+            <button id="email-submit" class="btn" type="submit">Submit</button>
           </form>
         </div>
       </section>
@@ -223,6 +217,32 @@
     <script src="names.js"></script>
     <script src="admin.js"></script>
     <script src="index.js"></script>
+    <script>
+      // ---------------------------------------------------
+      const emailInput = document.getElementById("email-input");
+      const emailForm = document.getElementById("email-form"); // Updated to 'id'
+      const emailSubmit = document.getElementById("email-submit");
+      const userEmail = emailInput.value;
+
+      emailForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        emailSubmit.style.backgroundColor = "green";
+        emailSubmit.innerHTML =
+          "<i class='bi bi-check' style='font-size: 20px'></i>";
+
+        const fd = new FormData(emailForm); // Updated to use 'email-form'
+        const urlEncoded = new URLSearchParams(fd).toString();
+
+        fetch("http://localhost:3000/submit-form", {
+          method: "POST",
+          body: urlEncoded,
+          headers: {
+            "Content-type": "application/x-www-form-urlencoded",
+          },
+        });
+        emailInput.value = "";
+      });
+    </script>
   </body>
   <footer>
     <p>
