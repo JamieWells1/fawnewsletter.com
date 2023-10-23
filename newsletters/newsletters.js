@@ -20,3 +20,15 @@ function downloadLocalPDF() {
 // Attach the function to the button click event
 const downloadButton = document.getElementById("downloadButton");
 downloadButton.addEventListener("click", downloadLocalPDF);
+
+function expand(idNumber) {
+  dropdown = document.getElementById("dropdown" + idNumber);
+  const icon = document.getElementById("icon" + idNumber);
+  if (icon.classList.contains("active")) {
+    icon.classList.remove("active");
+    dropdown.style.display = "none";
+  } else {
+    icon.classList.add("active");
+    dropdown.style.display = "block";
+  }
+}
