@@ -66,24 +66,25 @@ nav {
 .menu-items-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 15px;
   position: relative;
   left: 58vw;
 }
 
 .menu-item {
+  color: rgb(0, 0, 0);
   transition: 0.3s;
-}
-
-.menu-item:hover {
-  background-color: #134471;
-  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 15px;
+}
+
+.menu-item:hover {
+  background-color: rgb(48, 92, 133);
   cursor: pointer;
+  color: white;
 }
 
 #form-container {
