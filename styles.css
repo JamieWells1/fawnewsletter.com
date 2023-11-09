@@ -50,23 +50,23 @@ nav {
 .menu-items-container {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 15px;
   position: relative;
-  left: 60vw;
+  left: 58vw;
 }
 
 .menu-item {
   color: rgb(0, 0, 0);
   transition: 0.3s;
-}
-
-.menu-item:hover {
-  background-color: rgb(48, 92, 133);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 15px;
+}
+
+.menu-item:hover {
+  background-color: rgb(48, 92, 133);
   cursor: pointer;
   color: white;
 }
@@ -499,7 +499,7 @@ footer > p {
 }
 
 footer > p > a > i {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* ================================================================
@@ -658,7 +658,7 @@ footer > p > a > i {
   }
 
   .column-right > img {
-    width: 110%;
+    width: 530px;
     margin-top: 8%;
     border-radius: 20px;
     box-shadow: 20px 20px 30px rgb(109, 109, 109);
